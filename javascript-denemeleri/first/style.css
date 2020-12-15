@@ -1,0 +1,11 @@
+p {
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+p:hover{
+    transition: color 3ms ease-in-out ;
+    text-transform: capitalize;
+}
+

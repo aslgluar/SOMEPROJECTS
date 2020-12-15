@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="popup-1" class="share-btn-open">
+        <img src="/img/share.svg" alt="">
+        SHARE
+    </label>
+    <input type="checkbox" id="popup-1" class="popup-toggle">
+    <div class="popup">
+        <label for="popup-1" class="popup-close-fixed"></label>
+        <div class="popup-inner share-popup">
+            <label for="popup-1" class="popup-close">
+                <img src="/img/cancel.svg" alt="">
+            </label>
+            <h4>Share This DESİGN</h4>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="/img/facebook.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/img/instagram.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/img/linkedin.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/img/pinterest.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/img/twitter.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/img/youtube.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <h6>or copy link</h6>
+            <div class="input">
+                <input type="text" id="input-url" value="https://www.zingat.com/">
+                <button type="button" onclick="copy('input-url')">Copy</button>
+            </div>
+        </div>
+    </div>
+    <div class="alert">
+      
+    </div>
+    <script src="main.js" ></script>
+</body>
+</html>

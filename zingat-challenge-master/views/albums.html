@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Albums</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport"
+        content="width=device-width, minimal-ui, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4">My Albums And Photos</h1>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-xs-12 col-md-12 col-lg-4 " style=" border:1px solid; height: auto">
+                <ul class="js-fotoLinks">
+
+                    
+                    {% for i in range(0, 10) %}
+
+                    <li>
+                        <a href="#" data-photo-id="{{ kullanici[i].id }}" id="album-{{ kullanici[i].id }}">Album
+                            {{ kullanici[i].id }}</a>
+                    </li>
+
+                    {% else %}
+
+                    <li> </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-xs-12 col-md-12 col-lg-8 img-container"
+                style="border:1px solid; height: auto;">
+                <ul id="thumbnail"></ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 big-image " style="border:1px solid;">
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+        var fotoLinks = document.querySelectorAll('.js-fotoLinks li');
+
+        //thumbnail için bir dizi döndericez
+        Array.from(fotoLinks).forEach(function (el) {
+            var fotoLink = el.querySelector('a');
+            fotoLink.addEventListener("click", (elem) => {
+                document.getElementById('thumbnail').innerHTML = " <h4> thumbnails</br></h4>";
+                event.preventDefault();
+
+
+                //dataset ile url den gelen verileri alıcaz
+
+                var photoId = fotoLink.dataset.photoId;
+                const url = 'https://jsonplaceholder.typicode.com/albums/' + photoId + '/photos';
+                fetch(url)
+                    .then((resp) => resp.json())
+                    .then(function (data) {
+
+
+                        //kaç adet thumbnail istiyoruz
+                        for (let i = 0; i < 9; i++) {
+                            let elem = document.querySelector('#thumbnail');
+                            elem.innerHTML = elem.innerHTML + '<li data-big-image="' + data[i].url + '"><img src="'
+                                + data[i].thumbnailUrl + '" class="js-fotoLink"></li>';
+                        }
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            });
+
+
+
+            //küçük resimlere tıklayınca büyümesi için
+
+            const link = 'js-fotoLink';
+
+            document.addEventListener('click', function (event) {
+
+                if (!event.target.classList.contains(link)) return;
+                let elem = document.querySelector('.big-image');
+                elem.innerHTML = "<img src='" + event.path[1].dataset.bigImage + "'>";
+
+            }, false);
+        });
+
+
+    </script>
+</body>
+
+</html>

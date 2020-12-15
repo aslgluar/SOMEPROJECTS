@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>object-fit değerleri</h1>
+<article>
+  <section>
+    <h2>Orijinal resim</h2>
+    <img src="http://fatihhayrioglu.com/images/mevlana.jpg" alt="">
+    <img src="http://fatihhayrioglu.com/images/koy_06.jpg" alt="">
+    <p>Resimlere her hangi bir boyut tanımı yapılmadığı için içerik boyutları ile kutu boyutları aynı oldu.</p>
+  </section>
+
+  <section class="base">
+    <h2>Resim kutusuna boyut tanımlandı</h2>
+    <img src="http://fatihhayrioglu.com/images/mevlana.jpg" alt="">
+    <img src="http://fatihhayrioglu.com/images/koy_06.jpg" alt="">
+    <p>Resim kutusuna 200px genişlik ve 200px yükseklik tanılanmış hali. Sonuçta resimler büzüldü. En/boy oranı dikkate alınmadı.</p>
+  </section>
+
+  <section class="base fill">
+    <h2>object-fit: fill</h2>
+    <img src="http://fatihhayrioglu.com/images/mevlana.jpg" alt="">
+    <img src="http://fatihhayrioglu.com/images/koy_06.jpg" alt="">
+    <p>En/boy oranına bakılmaksızın görüntüyü içerik kutusuna uyacak şekilde uzatan varsayılan değerdir.</p>
+  </section>
+  
+  <section class="base contain">
+    <h2>object-fit: contain</h2>
+    <img src="http://fatihhayrioglu.com/images/mevlana.jpg" alt="">
+    <img src="http://fatihhayrioglu.com/images/koy_06.jpg" alt="">
+    <p>En/boy oranını korurken kutuya doldurmak için duruma göre resmin boyutunu artırır veya azaltır.</p>
+  </section>
+
+  <section class="base cover">
+    <h2>object-fit: cover</h2>
+    <img src="http://fatihhayrioglu.com/images/mevlana.jpg" alt="">
+    <img src="http://fatihhayrioglu.com/images/koy_06.jpg" alt="">
+    <p>Resim, en/boy oranını koruyarak ancak işlem sırasında resmi kırparak kutunun yüksekliğini ve genişliğini dolduracaktır.</p>
+  </section>
+
+  <section class="base scale-down">
+    <h2>object-fit: scale-downn</h2>
+    <img src="http://fatihhayrioglu.com/images/mevlana.jpg" alt="">
+    <img src="http://fatihhayrioglu.com/images/koy_06.jpg" alt="">
+    <p>Resim, en küçük somut nesne boyutunu bulmak için none ve contains arasındaki farkı karşılaştıracaktır ve uygun olanı uygulayacaktır.</p>
+  </section>
+
+  <section class="base none">
+    <h2>object-fit: none</h2>
+    <img src="http://fatihhayrioglu.com/images/mevlana.jpg" alt="">
+    <img src="http://fatihhayrioglu.com/images/koy_06.jpg" alt="">
+    <p>Resim orijinal halindeki boyutlarını korur ve içerik kutusu içine sığmaya çalışmaz. İçerik kutusundan taşan kısımlar kırpılır.</p>
+  </section>
+</article>
+</body>
+</html>

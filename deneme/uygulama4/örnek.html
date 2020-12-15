@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>uygulama4</title>
+</head>
+
+<body>
+
+    <h1>lütfen formu eksiksiz doldurunuz</h1>
+    <hr>
+
+    <form>
+
+        <h4>Hesap bilgileriniz</h4>
+        <p>kullanıcı adı: <input type="text" name="username" placeholder="kullanıcı adı giriniz" required></p>
+        <p>E-mail: <input placeholder="email giriniz" required type="email" name="email"></p>
+        <p>parola:<input type="password" name="password" placeholder="parola giriniz"></p>
+        <h4>Kişisel bilgileriniz</h4>
+        <p>Ad:<input type="text" name="ad"></p>
+        <p>Soyad:<input type="text" name="soyad"></p>
+        <p>
+            şehir:
+            <select name="sehir">
+                <option>seçiniz</option>
+                <option>istanbul</option>
+                <option>malatya</option>
+                <option>denizli</option>
+                <option>izmir</option>
+            </select>
+        
+        </p>
+        <p>
+            cinsiyet:
+            <input type="radio" name="cinsiyet">kadın
+            <input type="radio" name="cinsiyet">erkek
+                
+            
+       </p>
+       <p>
+          <strong> hobileriniz:</strong>
+          <input type="checkbox" name="hobileriniz"  >sinema
+          <input type="checkbox" name="hobileriniz" >voleybol
+          <input type="checkbox" name="hobileriniz" >yüzme
+          <input type="checkbox" name="hobileriniz" >spor
+
+        </p>
+       <input type="submit" value="kaydet">
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+
+    font-family: 'Lato', sans-serif;
+    font-size:1.6rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    background-color: #fff;
+
+
+}
+nav{
+    font-family: monospace;
+    background-color: beige;
+    color: #ffff;
+    padding-top:2.9rem ;
+    padding-bottom: 2.9rem;
+}
+a{
+text-decoration: none;
+
+}
+#logo-box .logo{
+    color:#fff;
+    font-weight: 700;
+    font-size: 3.2rem;
+
+}

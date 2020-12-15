@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Oem-Calculator</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container">
+            <a href="#" class="navbar-brand">Oem Calculater</a>
+        </div>
+
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="productname" placeholder="name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="productprice" placeholder="price">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm addbtn">
+                        <i class="fas fa-plus"></i>
+                        Add
+                    </button>
+                    <button type="submit" class="btn btn-warning btn-sm updatebtn">
+                        <i class="fas fa-edit"></i>
+                        Save Changes
+                    </button>
+                    <button type="submit" class="btn btn-danger btn-sm deletebtn">
+                        <i class="fas fa-times"></i>
+                        Delete
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm cancelbtn">
+                        <i class="fas fa-arrow-circle-left"></i>
+                        Cancel
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div id="productcard" class="card mt-3">
+            <table class="table">
+                <tbody id="item-list">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-footer text-right">
+
+                <p>Total (TL) <strong><span id="total-tl">0</span>TL</strong></p>
+                <p>Total ($)<strong> <span id="total-dolar">0</span>$</strong></p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+

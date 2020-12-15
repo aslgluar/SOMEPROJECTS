@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;;
+}
+.crousel {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.img-container {
+    display: flex;
+    transition: transform 0.3s linear;
+    transform: translateX(0);
+}
+img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}

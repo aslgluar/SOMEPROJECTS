@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>
+        <a href="#" target="_blank" onclick="renk('red')">kırmızı</a>
+        <a href="#" onclick="renk('yellow')">sarı</a>
+        <button onclick="renk('green')">yeşil</button>
+        <a href="#" onclick="renk('pink')">pink</a>
+    </p>
+    <p id="yazi">bu yazının rengi değişecek</p>
+    <form id="form" name="form" action="post">
+        <input type="text" name="k1" onfocus="kutugiris()" onsubmit=" return dogrula()" onblur="kutucikis()" value="Ara...">
+        <input type="submit" name="b1" value="gönder">
+    </form>
+
+    
+    <script src="index.js"></script> 
+</body>
+</html>

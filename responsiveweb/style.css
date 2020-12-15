@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 13px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+body{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    color: white;
+    background-color: #333;
+    line-height: 1.5;
+    text-align: center;
+ 
+}
+p{
+   padding: 1.6 rem 0;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+} 
+header{
+    height: 45rem;
+    background: teal;
+}
+
+header .bg-image{
+    position: absolute;
+
+    background-image: url(/img/images.png);
+    width: 100%;
+    height: 45rem;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+
+}
+header h1{
+    padding: 11rem;
+    padding-bottom: 0;
+
+}
+
+.btn{ 
+    display: inline-block;
+padding: 1.6rem 3.2rem;
+background:#3333;
+color: yellow;
+border: 1px solid #6666;
+transition: all 0.3s;
+margin: .5rem 0;
+}
+.btn:hover{
+background-color: darkgoldenrod;
+color: violet;
+
+}
+#section-a{
+background-color: #eaeaea;
+color: #3333;
+padding: 3.2rem;
+
+}
+#section-b{
+    padding: 2rem;
+}
+
+#section-b ul{
+    list-style: none;
+}
+#section-b li{
+    margin-bottom: 1.5rem;
+    
+}
+.col-content{
+    padding: 1.5rem;
+}
+#section-c{
+    padding: 5rem;
+    background: yellow;
+    color: #333;
+
+}
+#section-d .box{
+
+    padding: 5rem;
+   
+}
+#section-d .box :first-child{
+    background-color: #2690d4; 
+
+
+}
+#section-d .box p{
+    margin-bottom: auto;
+}
+footer{
+    padding: 4rem;
+    background: black;
+}
+footer a{
+    color: #2690d4;
+}
+
+@media screen and (max-width:800px){
+
+   #section-b li{
+       width: 28%;
+       height: 28%;
+       display: inline-block;
+
+   }
+   .box{
+       width: 50%;
+       float: left;
+   }
+   html{
+    font-size: 7px;
+}
+
+}

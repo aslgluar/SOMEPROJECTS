@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #container {
+      width: 700px;
+      margin: 0 auto;
+
+    }
+
+    label,
+    h1 {
+      color: seagreen;
+    }
+
+    .chat-input {
+      width: 300px;
+      height: 35px;
+      border: solid 1px #444;
+    }
+
+    .chat-submit {
+      width: 50px;
+      height: 35px;
+      border: solid 1px #444;
+
+    }
+
+    .chat-window {
+      height: 300px;
+      width: 400px;
+
+    }
+
+    .bubble {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-right: -12px;
+      margin-left: -12px;
+
+    }
+
+    #chatSection {
+      float: left;
+      border: 4px grey solid;
+      border-radius: 10px;
+      padding: 10px;
+      background-image: url(../images/bg.png);
+
+    }
+  </style>
+  <title>Chat app</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1>
+      Nodejs + Socket Chat app
+    </h1>
+    <div id="chatSection">
+      <div class="chat-window">
+        <div class="col-auto bubble "></div>
+      </div>
+      <form class="chat-form">
+        <label class="chat-label">
+          <strong>Enter a message:</strong>
+          <input type="text" class="chat-input" />
+        </label>
+        <input type="submit" class="chat-submit" value="enter" />
+      </form>
+    </div>
+  </div>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

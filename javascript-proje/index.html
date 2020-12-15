@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Task List</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!--font awesome için -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" >  
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <div class="container p3">
+
+        <h1 class="app-tittle" id="header">to do list</h1>
+        <div class="card">
+            <div class="card-header">
+                New Task
+            </div>
+            <div class="card-body">
+                <form  id="addtaskform">
+                    <div class="input-group mt-3">
+                    <input id="txttaskname" type="text" class="form-control" placeholder="Type a new task">
+                    <div class="input-group-append">
+                        <button id="btnaddnewtask" class="btn btn-primary" type="submit">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Task List
+                <a href="#" id="btndeleteall" class="btn  btn-outline-danger btn-sm float-right delete-all">
+                    Delete All
+
+                </a>
+            </div>
+            <ul id="task-list" class="list-group">
+                <li class="list-group-item list-group-item-secondary">   To Do İtem 
+                    <a class="delete-item float-right" href="#">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-secondary">   To Do İtem 
+                    <a class="delete-item float-right" href="#">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-secondary">   To Do İtem 
+                    <a class="delete-item float-right" href="#">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-secondary">   To Do İtem 
+                    <a class="delete-item float-right" href="#">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-secondary">   To Do İtem 
+                    <a class="delete-item float-right" href="#">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>

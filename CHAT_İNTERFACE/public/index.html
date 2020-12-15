@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="chat">
+        <div class="sidebar">
+            <div class="search">
+                <input type="text" placeholder="Ara...">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li class="active">
+                      <a href="#">
+                        <img src="5.jpg" alt="">
+                        <div class="contact">
+                            <div id="contact-name" class="name">aslı</div>
+                            <div id="contact-message" class="message">zerxtcyfugıh</div>
+                        </div>
+                        <div class="notification">6</div>
+                      </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                          <img src="/public/5.jpg" alt="">
+                          <div class="contact">
+                              <div id="contact-name" class="name">aslı</div>
+                              <div id="contact-message" class="message">zerxtcyfugıh</div>
+                          </div>
+                          <div class="notification"></div>
+                        </a>
+                      </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="message-header">
+                <div class="user-info">
+                    <img class="userimg" src="/public/5.jpg" alt="">
+                    <div class="user">
+                        <div id="username" class="name">aslıgül uçar</div>
+                        <div id="time" class="time">10 minutes ago</div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="message-content">
+                <div class="message me">
+                    <div id="bubbleid" class="bubble">Hİ HOW ARE YOU?</div>
+                    <div id="timemessage" class="time">1 minute ago</div>
+                </div>
+                <div class="message">
+                    <div id="bubbleid" class="bubble">Hİ HOW ARE YOU?</div>
+                    <div id="timemessage" class="time">1 minute ago</div>
+                </div>
+            
+            </div>
+            <div class="message-form">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-envelope-open"></i>
+                        </a>
+                    </li>
+                    <li class="input">
+                        <input type="text" placeholder="Type your answer...">
+                    </li>
+                    <li>
+                        <button id="send-btn" class="send-button" type="submit">
+                            <i class="fab fa-telegram-plane"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/index.js" ></script>
+    
+</body>
+</html>

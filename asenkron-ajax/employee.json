@@ -1,0 +1,36 @@
+[
+    {
+
+        "firstname" :"aslıgül",
+        "lastname" :"uçar",
+        "age":24,
+        "job":"student"
+
+    },
+    {
+
+        "firstname" :"esra",
+        "lastname" :"uçar",
+        "age":22,
+        "job":"student"
+
+    },
+    {
+
+        "firstname" :"elif sıla",
+        "lastname" :"uçar",
+        "age":17,
+        "job":"student"
+
+    },
+    {
+
+        "firstname" :"oğuz",
+        "lastname" :"uçar",
+        "age":7,
+        "job":"student"
+
+    }
+
+
+]
